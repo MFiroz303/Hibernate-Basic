@@ -1,0 +1,22 @@
+<!-- <!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.bridgeit.hibernateTest.Employee" table="emp121"
+		discriminator-value="Employee">
+		<id name="id">
+			<generator class="increment" />
+		</id>
+		<discriminator column="type" type="string" />
+		<property name="name" />
+		<subclass name="com.bridgeit.hibernateTest.RegularEmployee" discriminator-value=" RegularEmployee">
+			<property name="salary" />
+			<property name="bonus" />
+		</subclass>
+		<subclass name="com.bridgeit.hibernateTest.ContractEmployee"
+			discriminator-value="ContractEmployee">
+			<property name="pay_per_hour" />
+			<property name="contract_duration" />
+		</subclass>
+	</class>
+</hibernate-mapping>     -->
